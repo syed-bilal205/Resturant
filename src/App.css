@@ -1,0 +1,17 @@
+:root{
+  --bodycolor: #0A071A;
+  --primarycolor:  #F5B70A;
+  --secondarycolor: #141124;
+  --btnbgcolor: #F76E11;
+  --pcolor: #C4C4C4;
+  --servicescolor: #7865FF, #FF766B, #F5B70A, #2ACE92;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color:var(--bodycolor);
+  overflow-x: hidden;
+}

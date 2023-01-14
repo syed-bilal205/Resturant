@@ -1,0 +1,94 @@
+.appContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F5B70A;
+    border-radius: 10px;
+    text-transform: capitalize;
+    gap: .2rem;
+    padding: 1rem 6rem;
+    width: 100%;
+}
+.appImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.appImg img{
+    width: 30rem;
+}
+.appContent{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+ .appContent span{
+    color:  #141124;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.appContent h4{
+    font-size: 2rem;
+    color: #141124;
+    font-weight: bold;
+}
+.appContent p{
+    font-size: 1rem;
+    color: white;
+    letter-spacing: 2px;
+    line-height: 1.5rem;
+}
+.appButtonDiv{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.appButtonDiv .button{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: .5rem;
+    padding: .5rem 2rem;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+}
+
+.appButtonDiv .store{
+    background: #141124;
+    color: white;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.appButtonDiv .play{
+    background: #C4C4C4;
+    color: #141124;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.appButtonDiv .play:hover{
+    background-color: #ada8a8;
+}
+.appButtonDiv .store:hover{
+    background-color: #000000;
+}
+
+/* media query */
+@media screen and (max-width:992px) {
+    .appContainer{
+        flex-direction: column;
+        padding: 1rem 1.2rem;
+    }
+    .appContent{
+        padding: 2rem .5rem;
+    }
+    .appImg img{
+        width: 22rem;
+    }
+    .appContent h4{
+        font-size: 1.7rem;
+    }
+    /* .appButtonDiv{
+        display: flex;
+    } */
+}

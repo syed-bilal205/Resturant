@@ -1,0 +1,121 @@
+.container{
+    background-color: #120c31;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 2px 7px 1px rgba(188,110,255,0.64);
+    -webkit-box-shadow: 0px 2px 7px 1px rgba(188,110,255,0.64);
+    -moz-box-shadow: 0px 2px 7px 1px rgba(188,110,255,0.64);
+    z-index: 999;
+}
+.container .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    width: 100%;
+}
+.logo{
+    color:#F76E11;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.logoIcon{
+    color: white;
+    font-size: 2.6rem;
+}
+.nav-links{
+    display: flex;
+}
+.nav-links li{
+    padding: 0 1rem;
+    list-style: none;
+}
+.nav-links a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color:white;
+    font-weight: 600;
+    transition: 0.5s;
+    letter-spacing: 2px;
+}
+.nav-links a:hover{
+    color: #F76E11;
+}
+.search{
+    position: relative;
+}
+ input{
+    padding: .9rem .9rem;
+    font-size: .8rem;
+    outline: none;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    background: #170e46;
+}
+.searchIcons{
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    left: 82%;
+    top: 20%;
+}
+.searchIcons:hover{
+    color: #F76E11;
+}
+.hamburger{
+    cursor: pointer;
+    display: none;
+}
+.faBars{
+    color: white;
+    font-size: 1.5rem;
+}
+
+/* media queries */
+@media screen and (max-width:1047px) {
+    .hamburger{
+        display: flex;
+        z-index: 99;
+    }
+    .nav-links{
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        z-index: 99;
+        height: 100vh;
+        transition: 0.4s;
+        background-color:#120c31;
+        box-shadow: 0px 2px 7px 1px rgba(188,110,255,0.64);
+        -webkit-box-shadow: 0px 2px 7px 1px rgba(188,110,255,0.64);
+        -moz-box-shadow: 0px 2px 7px 1px rgba(188,110,255,0.64);
+    }
+    .search{
+        display: none;
+    }
+    .active{
+        right: 0;
+    }
+    .nav-links li{
+        padding: 1rem;
+        width: 100%;
+    }
+    .nav-links a{
+        font-size: 2rem;
+    }
+}
+@media (max-width:786px) {
+    .container .wrapper{
+        padding: 1rem;
+    }
+}
+@media screen and (max-width:396px){
+    .logo{
+        font-size: 2rem;
+    }
+}

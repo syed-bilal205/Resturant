@@ -1,0 +1,37 @@
+/* .productContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+} */
+.menuContainer h4{
+    color:#F76E11;
+    font-size: 3rem;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+.mainMenu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: .5rem .3rem;
+}
+.btn{
+    background:transparent;
+    border: 1px solid  #F76E11;
+    color: white;
+    padding: .9rem 1.5rem;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.5s ease;
+    text-transform: capitalize;
+    margin:1rem 1rem ;
+    outline: none;
+}
+.btn:hover{
+    background-color: #f38236;
+}
+.change{
+    background:  #F76E11;
+}
